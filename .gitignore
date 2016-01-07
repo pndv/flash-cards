@@ -7,4 +7,6 @@
 /src/main/latex/cards/output
 **/*.log
 **/*.pdf
+**/*.toc
+**/*.dvi
 **/*.gz
