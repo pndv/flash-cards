@@ -1,2 +1,10 @@
 **/*.iml
 /.idea
+**/*.aux
+**/*.latexmk
+**/*.fdb_latexmk
+**/*.fls
+/src/main/latex/cards/output
+**/*.log
+**/*.pdf
+**/*.gz

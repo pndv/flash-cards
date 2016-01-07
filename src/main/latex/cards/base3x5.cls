@@ -5,6 +5,7 @@
 \usepackage[T1,T2A]{fontenc}
 \usepackage[english,russian]{babel}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{subfiles}
 
 \geometry{papersize={3.0in,5.0in},landscape}
 
@@ -19,4 +20,17 @@
 \newcommand{\fmt}[1]{\Huge \textsc{\textbf{#1}}} %Formatting of main card text
 \newcommand{\fmr}[1]{\fmt{\textcolor{BrickRed}{#1}}} %Colour of Russian text 
 \newcommand{\fme}[1]{\fmt{\textcolor{RoyalBlue}{#1}}} %Colour of English text
-\newcommand{\crd}[2]{\card{\fmr{#1}}{\fme{#2}}}
+
+\newcommand{\crd}[2]{\card{\fmr{#1}}{\fme{#2}}} %Coloured card
+\newcommand{\crdt}[2]{ %Coloured table
+	\card{
+		\begin{tabular}{c}
+			\fmr{#1}
+		\end{tabular}
+	}
+	{
+		\begin{tabular}{c}
+			\fme{#2}
+		\end{tabular}
+	}
+}
